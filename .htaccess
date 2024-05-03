@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /tugas5-pweb/
+RewriteRule ^index\\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /tugas5-pweb/index.php [L]
